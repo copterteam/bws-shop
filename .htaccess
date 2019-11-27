@@ -13,4 +13,5 @@ RewriteRule ^(.*)$ "http\:\/\/www\.bws-shop\.ru\/$1" [R=301,L]
 
 Redirect 301 /about http://www.bws-shop.ru/404
 Redirect 301 /uslugi http://www.bws-shop.ru/404
-Redirect 301 /products http://www.bws-shop.ru/404
+Redirect 301 /products https://www.avito.ru/i106048785
+

@@ -31,7 +31,7 @@
                   <li <?if(substr($file,-9) == 'index.php'){?>	class="active"<?}?> ><a href="/">Главная</a></li>
                   <li <?if(substr($file,-9) == 'about.php'){?>	class="active"<?}?>><a href="/about">О нас</a></li>
                   <li <?if(substr($file,-10) == 'uslugi.php'){?>	class="active"<?}?> ><a href="/uslugi">Услуги</a></li>
-                  <li <?if(substr($file,-12) == 'products.php'){?>	class="active"<?}?>><a href="/products">Продукция</a></li>
+                  <li <?if(substr($file,-12) == 'products.php'){?>	class="active"<?}?>><a href="/products" target="_blanck">Продукция</a></li>
                   <li <?if(substr($file,-12) == 'contacts.php'){?>	class="active"<?}?>><a href="/contacts">Контакты</a></li>
                 </ul>
               </div>
