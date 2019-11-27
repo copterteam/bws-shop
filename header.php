@@ -45,9 +45,8 @@
           <div class="swiper-wrap">
             <div class="swiper-container swiper-slider">
               <div class="swiper-wrapper">			  
-                <div data-slide-bg="images/DSC07424.jpg" class="swiper-slide"></div>
-                <div data-slide-bg="images/DSC08088.jpg" class="swiper-slide"></div>
-                <div data-slide-bg="images/DJI0663.JPG" class="swiper-slide"></div>
+                <div data-slide-bg="images/4316.jpg" class="swiper-slide"></div>
+              <div data-slide-bg="images/5729.jpg" class="swiper-slide"></div>
               </div>
               <!-- Swiper Pagination-->
               <div class="swiper-pagination"></div>
@@ -68,7 +67,7 @@
                 <div class="shell">
                   <div class="range range-condensed range-md-center text-center">
                     <div class="cell-xs-12 cell-md-10">
-                      <h2>
+                      <h2 style="color:#222323;background-color:rgba(120,120,120,.5)">
                         Защитные пластиковые кейсы для промышленного оборудования
                       </h2>
                     </div>
@@ -79,5 +78,5 @@
           </div>
         </div>
 	<?}?>	
-		
+
       </header>

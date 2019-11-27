@@ -26,7 +26,8 @@
       <!-- Page Content-->
       <main class="page-content">
         <!-- Links -->
-     
+               <div class="hr-vertical"></div>
+
 
         <!-- Google map-->
         <section>
