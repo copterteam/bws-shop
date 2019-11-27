@@ -1,0 +1,12 @@
+.list-inline-separated li {
+  position: relative;
+  vertical-align: middle;
+}
+
+.list-inline-separated li + li:before {
+  content: '';
+  font: inherit;
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=_lists.css.map */

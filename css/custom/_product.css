@@ -1,0 +1,11 @@
+.product img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.product .caption {
+  padding: 43px 0;
+}
+
+/*# sourceMappingURL=_product.css.map */
