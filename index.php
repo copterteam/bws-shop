@@ -34,7 +34,7 @@
           <div class="hr-vertical"></div>
           <h5>Online подбор кейса по размеру</h5>
 		  
-			
+			<img src="images/5117-5.png">
 		 </div>	
         <!-- Google map-->
         <section>
