@@ -39,44 +39,6 @@
           </nav>
         </div>
 
-	<?	if(substr($file,-9) == 'index.php'){?>	
-  <!-- Swiper-->
-        <div class="page-head-body">
-          <div class="swiper-wrap">
-            <div class="swiper-container swiper-slider">
-              <div class="swiper-wrapper">			  
-                <div data-slide-bg="images/4316.jpg" class="swiper-slide"></div>
-              <div data-slide-bg="images/5729.jpg" class="swiper-slide"></div>
-              </div>
-              <!-- Swiper Pagination-->
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-          <div class="page-head-content bg-context-dark text-center">
-            <div class="section-bottom-80 section-md-bottom-100 section-sh2-bottom-204 bg-context-dark block-top-level">
-              <div class="section-35 section-sm-89">
-                <div class="shell text-center">
-                  <ul class="list-inline-separated">
-                    <li><a href="#">facebook</a></li>
-                    <li><a href="#">youtube</a></li>
-                    <li><a href="#">instagram</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="section-35 section-md-100 section-lg-35 section-sh2-189">
-                <div class="shell">
-                  <div class="range range-condensed range-md-center text-center">
-                    <div class="cell-xs-12 cell-md-10">
-                      <h2 style="color:#222323;background-color:rgba(120,120,120,.5)">
-                        Защитные пластиковые кейсы для промышленного оборудования
-                      </h2>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-	<?}?>	
+
 
       </header>

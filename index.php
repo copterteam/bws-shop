@@ -26,9 +26,16 @@
       <!-- Page Content-->
       <main class="page-content">
         <!-- Links -->
-               <div class="hr-vertical"></div>
-
-
+             
+       <section>
+         <img src="images/4316.jpg">
+        </section>
+		  <div class="shell text-center">
+          <div class="hr-vertical"></div>
+          <h5>Online подбор кейса по размеру</h5>
+		  
+			
+		 </div>	
         <!-- Google map-->
         <section>
           <!-- RD Google Map-->
