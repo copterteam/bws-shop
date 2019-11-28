@@ -2,6 +2,40 @@
 
 date_default_timezone_set('UTC');
 
+function maxSizes($link){
+
+$fresult = [];
+$sort = array('innerx','innery','innerz');
+	
+  
+   
+  $query="SELECT id, innerx FROM casemodels ORDER BY innerx DESC";
+   $result=$link->query($query);
+   $array=$result->fetch();
+
+   $fresult[0]=$array['innerx'];
+	
+  $query="SELECT id, innery FROM casemodels ORDER BY innery DESC";
+   $result=$link->query($query);
+   $array=$result->fetch();
+
+   $fresult[1]=$array['innery'];
+	  
+  $query="SELECT id, innerz FROM casemodels ORDER BY innerz DESC";
+   $result=$link->query($query);
+   $array=$result->fetch();
+
+   $fresult[2]=$array['innerz'];
+
+
+	  
+	  
+	  
+  return $fresult;
+   
+}
+
+
 function updateIndexmap(){
 	
 	 $xml2 = new DomDocument('1.0','utf-8');

@@ -1,3 +1,10 @@
+<?
+include_once("admin/func.php");
+include_once("admin/pdo_connect.php");
+
+$maxsizes = maxSizes($link);
+
+?>
 <!DOCTYPE html>
 <html lang="en" class="wide wow-animation">
   <head>
@@ -30,12 +37,43 @@
        <section>
          <img src="images/4316.jpg">
         </section>
-		  <div class="shell text-center">
-          <div class="hr-vertical"></div>
-          <h5>Online подбор кейса по размеру</h5>
-		  
-			<img src="images/5117-5.png">
-		 </div>	
+       <section class="section-35 section-sm-top-75 section-sm-bottom-145 text-center">
+          <div class="shell">
+            <div class="range range-sm-center">
+              <div class="cell-xs-12">
+                <div class="hr-vertical"></div>
+                <h5>ONLINE подбор кейса по размеру</h5>
+              </div>
+            </div>
+            <div class="range">
+              <div class="cell-xs-12">
+                <!-- RD Mailform result field-->
+                <div class="rd-mailform-validate"></div>
+				
+                <!-- RD Mailform-->
+				<span>Укажите минимальные размеры (длина, ширина, высота) <br>ВНУТРЕННЕГО ПРОСТРАНСТВА кейса, которые Вам необходимы</span>
+				<br><br>
+                <form data-result-class="rd-mailform-validate" data-form-type="calculate" method="post" action="" class="rd-mailform">
+                  <div class="range">
+                    <div class="cell-xs-12 cell-md-5">
+                      <input type="text" data-constraints="@NotEmpty" name="name"  placeholder="Длина (Max: <?echo($maxsizes[0]);?>)">
+                      <input type="text" data-constraints="@NotEmpty" name="phone" placeholder="Ширина (Max: <?echo($maxsizes[1]);?>)">
+                      <input type="text" data-constraints="@NotEmpty" name="email" placeholder="Высота (Max: <?echo($maxsizes[2]);?>)">
+                    </div>
+                    <div class="cell-xs-12 cell-md-7 offset-top-29 offset-md-top-0">
+                  <img src="images/5117-5.png">
+                 </div>
+                  </div>
+                  <div class="range range-md-right text-left offset-top-40">
+                    <div class="cell-xs-12 cell-md-7">
+                      <button class="btn btn-lg btn-rect btn-primary">Подобрать</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
         <!-- Google map-->
         <section>
           <!-- RD Google Map-->
