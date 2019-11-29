@@ -53,7 +53,7 @@ $maxsizes = maxSizes($link);
                 <!-- RD Mailform-->
 				<span>Укажите минимальные размеры (длина, ширина, высота) <br>ВНУТРЕННЕГО ПРОСТРАНСТВА кейса, которые Вам необходимы</span>
 				<br><br>
-                <form  method="post" action="" class="rd-mailform">
+                <form  method="post" data-result-class="rd-mailform-validate" data-form-type="search" action="bat/searchbase.php" class="rd-mailform">
                   <div class="range">
                     <div class="cell-xs-12 cell-md-5">
                       <input type="text" data-constraints="@NotEmpty @NumbersOnly" name="innerx"  placeholder="Длина (Max: <?echo($maxsizes[0]);?> мм)">
@@ -66,7 +66,8 @@ $maxsizes = maxSizes($link);
                   </div>
                   <div class="range range-md-right text-left offset-top-40">
                     <div class="cell-xs-12 cell-md-7">
-                      <button class="btn btn-lg btn-rect btn-primary">Подобрать</button>
+					  <input type="hidden" name="act" value="searchcase">
+                      <button type="submit" class="btn btn-lg btn-rect btn-primary">Подобрать</button>
                     </div>
                   </div>
                 </form>
