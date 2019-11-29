@@ -51,25 +51,23 @@ $maxsizes = maxSizes($link);
                 <div class="rd-mailform-validate"></div>
 				
                 <!-- RD Mailform-->
-				<span>Укажите минимальные размеры (длина, ширина, высота) <br>ВНУТРЕННЕГО ПРОСТРАНСТВА кейса, которые Вам необходимы</span>
-				<br><br>
-                <form   style="margin-top:29px" method="post"  action="bat/searchbase.php" class="rd-mailform2">
+				<span>Укажите минимальные размеры (длина, ширина, высота) ВНУТРЕННЕГО ПРОСТРАНСТВА кейса, которые Вам необходимы</span>
+				
+                <form   style="margin-top:49px" method="post"  action="bat/searchbase.php" class="rd-mailform2">
                   <div class="range">
                     <div class="cell-xs-12 cell-md-5">
                       <div class="forinput"><input type="text"  name="innerx"  placeholder="Длина (Max: <?echo($maxsizes[0]);?> мм)"></div>
                       <div class="forinput"><input style="margin-top:29px" type="text"  name="innery" placeholder="Ширина (Max: <?echo($maxsizes[1]);?> мм)"></div>
                       <div class="forinput"><input style="margin-top:29px" type="text"  name="innerz" placeholder="Высота (Max: <?echo($maxsizes[2]);?> мм)"></div>
-                    </div>
+                   
+				  
+					<button type="submit" class="btn btn-lg btn-rect btn-primary">Подобрать</button>
+					</div>
                     <div class="cell-xs-12 cell-md-7 offset-top-29 offset-md-top-0">
-                  <img src="images/5117-5.png">
+                  <img src="images/5117-5.png" style="margin-top:29px">
                  </div>
                   </div>
-                  <div class="range range-md-right text-left offset-top-40">
-                    <div class="cell-xs-12 cell-md-7">
-					  <input type="hidden" name="act" value="searchcase">
-                      <button type="submit" class="btn btn-lg btn-rect btn-primary">Подобрать</button>
-                    </div>
-                  </div>
+                
                 </form>
               </div>
             </div>

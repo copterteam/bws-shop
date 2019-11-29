@@ -66,14 +66,50 @@ $document.ready(function () {
 	
 	
 	
-	$('form.rd-mailform2').validate({  //   Проверка формы кредита
+	$('form.rd-mailform2').validate({  //   Проверка формы 
 		   rules: {	innerx: {  required:true, number:true },innery: {  required:true, number:true},innerz: {  required:true, number:true} },
 	       messages: {		innerx: {   required:"Укажите длину в мм!", number:"Только цифры!" },innery: {  required:"Укажите ширину в мм!", number:"Только цифры!" },innerz: {  required:"Укажите высоту в мм!", number:"Только цифры!" } },
 	    	submitHandler: function(){$('form.rd-mailform2').attr('name','submitted');}
 			
 			     	}); // Конец Validate	
 			
+										
+			$('form.rd-mailform2').submit(function(evt){                // Отправка формы 
+			
+			evt.preventDefault();
+			
+			var self = this ;
+			
+			if(  $(this).attr('name')=='submitted'  ){            // Форма прошла валидацию 
+				
+				$(this).find('button').prop('disabled',true);
+				$(this).find('input').prop('readonly',true);
+				
+			
+			 $.getJSON('/bat/searchbase.php?callback=?',{act:'searchcase',innerx: $(this).find('input[name="innerx"]').val(),innery: $(this).find('input[name="innery"]').val(),innerz: $(this).find('input[name="innerz"]').val()},function(cases){
+		 		 
+		      
 
+			  $.each(cases.item1,function(i,casedata){  
+										 
+		       	        $('.main_content .fresh_feedback').append( ''+casedata.innerx+'');
+		 					
+		       });
+			
+			   
+		 		
+				$(self).find('button').prop('disabled',false);
+				$(self).find('input').prop('readonly',false);
+           
+		  });
+
+		  
+				
+			}
+			
+		});
+		
+		
   function getSwiperHeight(object, attr) {
     var val = object.attr("data-" + attr),
         dim;
