@@ -30,6 +30,11 @@
                   <dt>E-mail</dt>
                   <dd><a href="mailto:#">shop@bws-shop.ru</a></dd>
                 </dl>
+				 <dl class="dl-inline">
+				   <dt>Instagram</dt>
+                  <dd><a href="https://www.instagram.com/bws_cases" target="_blank">bws_cases</a></dd>
+                </dl>
+				
               </address>
             </div>
           </div>
