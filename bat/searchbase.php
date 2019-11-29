@@ -33,15 +33,14 @@ $act=$_POST['act'];
 	 
 	 
 	 
-foreach($farray as $first){ }
+foreach($farray as $first){ print_r($first); }
 	 
 	 
 
-foreach($sarray as $second){  }
+foreach($sarray as $second){ print_r($second); }
 	 
 
 
-die('MF000');
  }
 
   

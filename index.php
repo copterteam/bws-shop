@@ -53,12 +53,12 @@ $maxsizes = maxSizes($link);
                 <!-- RD Mailform-->
 				<span>Укажите минимальные размеры (длина, ширина, высота) <br>ВНУТРЕННЕГО ПРОСТРАНСТВА кейса, которые Вам необходимы</span>
 				<br><br>
-                <form  method="post" data-result-class="rd-mailform-validate" data-form-type="search" action="bat/searchbase.php" class="rd-mailform">
+                <form   style="margin-top:29px" method="post"  action="bat/searchbase.php" class="rd-mailform2">
                   <div class="range">
                     <div class="cell-xs-12 cell-md-5">
-                      <input type="text" data-constraints="@NotEmpty @NumbersOnly" name="innerx"  placeholder="Длина (Max: <?echo($maxsizes[0]);?> мм)">
-                      <input type="text" data-constraints="@NotEmpty @NumbersOnly" name="innery" placeholder="Ширина (Max: <?echo($maxsizes[1]);?> мм)">
-                      <input type="text" data-constraints="@NotEmpty @NumbersOnly" name="innerz" placeholder="Высота (Max: <?echo($maxsizes[2]);?> мм)">
+                      <div class="forinput"><input type="text"  name="innerx"  placeholder="Длина (Max: <?echo($maxsizes[0]);?> мм)"></div>
+                      <div class="forinput"><input style="margin-top:29px" type="text"  name="innery" placeholder="Ширина (Max: <?echo($maxsizes[1]);?> мм)"></div>
+                      <div class="forinput"><input style="margin-top:29px" type="text"  name="innerz" placeholder="Высота (Max: <?echo($maxsizes[2]);?> мм)"></div>
                     </div>
                     <div class="cell-xs-12 cell-md-7 offset-top-29 offset-md-top-0">
                   <img src="images/5117-5.png">
@@ -97,6 +97,9 @@ $maxsizes = maxSizes($link);
 
     <!-- Java script-->
     <script src="js/core.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
+
+	
   </body>
 </html>

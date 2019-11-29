@@ -35747,7 +35747,7 @@ yx-axis
   margin-top: 29px;
 }
 
-.rd-mailform {
+.rd-mailform, .rd-mailform2{
   position: relative;
   display: block;
   width: 100%;
@@ -35766,11 +35766,24 @@ yx-axis
   font-weight: inherit;
 }
 
-.rd-mailform input, .rd-mailform select {
+.rd-mailform2 div.forinput {
+  position:relative;
+  display:block;
+  margin:0; padding:0;
+}
+.rd-mailform2 label.error {
+  position:absolute;
+  display:inline-block;
+  top:5px;
+  left:300px;
+  font-weight:normal;
+  font-size:15px;
+}
+.rd-mailform input, .rd-mailform2 input, .rd-mailform select {
   height: 54px;
 }
 
-.rd-mailform input, .rd-mailform textarea {
+.rd-mailform input, .rd-mailform2 input, .rd-mailform textarea {
   display: block;
   width: 100%;
   font-size: 17px;
@@ -35783,43 +35796,43 @@ yx-axis
   border-radius: 0;
 }
 
-.rd-mailform input:-moz-placeholder, .rd-mailform textarea:-moz-placeholder {
+.rd-mailform input:-moz-placeholder, .rd-mailform2 input:-moz-placeholder, .rd-mailform textarea:-moz-placeholder {
   color: #303334;
   opacity: 1;
   transition: 0.3s;
 }
 
-.rd-mailform input::-webkit-input-placeholder, .rd-mailform textarea::-webkit-input-placeholder {
+.rd-mailform input::-webkit-input-placeholder, .rd-mailform2 input:-webkit-input-placeholder, .rd-mailform textarea::-webkit-input-placeholder {
   color: #303334;
   opacity: 1;
   transition: 0.3s;
 }
 
-.rd-mailform input::-moz-placeholder, .rd-mailform textarea::-moz-placeholder {
+.rd-mailform input::-moz-placeholder, .rd-mailform2 input:-moz-placeholder, .rd-mailform textarea::-moz-placeholder {
   color: #303334;
   opacity: 1;
   transition: 0.3s;
 }
 
-.rd-mailform input:-ms-input-placeholder, .rd-mailform textarea:-ms-input-placeholder {
+.rd-mailform input:-ms-input-placeholder, .rd-mailform2 input:-ms-input-placeholder, .rd-mailform textarea:-ms-input-placeholder {
   color: #303334;
   opacity: 1;
   transition: 0.3s;
 }
 
-.rd-mailform input:focus:-moz-placeholder, .rd-mailform textarea:focus:-moz-placeholder {
+.rd-mailform input:focus:-moz-placeholder, .rd-mailform2 input:focus:-moz-placeholder, .rd-mailform textarea:focus:-moz-placeholder {
   opacity: 0.4;
 }
 
-.rd-mailform input:focus::-webkit-input-placeholder, .rd-mailform textarea:focus::-webkit-input-placeholder {
+.rd-mailform input:focus::-webkit-input-placeholder, .rd-mailform2 input:focus::-webkit-input-placeholder, .rd-mailform textarea:focus::-webkit-input-placeholder {
   opacity: 0.4;
 }
 
-.rd-mailform input:focus::-moz-placeholder, .rd-mailform textarea:focus::-moz-placeholder {
+.rd-mailform input:focus::-moz-placeholder, .rd-mailform2 input:focus::-moz-placeholder, .rd-mailform textarea:focus::-moz-placeholder {
   opacity: 0.4;
 }
 
-.rd-mailform input:focus:-ms-input-placeholder, .rd-mailform textarea:focus:-ms-input-placeholder {
+.rd-mailform input:focus:-ms-input-placeholder, .rd-mailform2 input:focus:-ms-input-placeholder, .rd-mailform textarea:focus:-ms-input-placeholder {
   opacity: 0.4;
 }
 
