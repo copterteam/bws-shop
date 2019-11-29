@@ -35773,9 +35773,9 @@ yx-axis
 }
 .rd-mailform2 label.error {
   position:absolute;
-  display:inline-block;
+  display:block;
   top:5px;
-  left:300px;
+  right:30px;
   font-weight:normal;
   font-size:15px;
 }
