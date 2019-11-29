@@ -56,9 +56,9 @@ $maxsizes = maxSizes($link);
                 <form  method="post" action="" class="rd-mailform">
                   <div class="range">
                     <div class="cell-xs-12 cell-md-5">
-                      <input type="text" data-constraints="@NotEmpty @NumbersOnly" name="name"  placeholder="Длина (Max: <?echo($maxsizes[0]);?> мм)">
-                      <input type="text" data-constraints="@NotEmpty @NumbersOnly" name="phone" placeholder="Ширина (Max: <?echo($maxsizes[1]);?> мм)">
-                      <input type="text" data-constraints="@NotEmpty @NumbersOnly" name="email" placeholder="Высота (Max: <?echo($maxsizes[2]);?> мм)">
+                      <input type="text" data-constraints="@NotEmpty @NumbersOnly" name="innerx"  placeholder="Длина (Max: <?echo($maxsizes[0]);?> мм)">
+                      <input type="text" data-constraints="@NotEmpty @NumbersOnly" name="innery" placeholder="Ширина (Max: <?echo($maxsizes[1]);?> мм)">
+                      <input type="text" data-constraints="@NotEmpty @NumbersOnly" name="innerz" placeholder="Высота (Max: <?echo($maxsizes[2]);?> мм)">
                     </div>
                     <div class="cell-xs-12 cell-md-7 offset-top-29 offset-md-top-0">
                   <img src="images/5117-5.png">
