@@ -68,7 +68,7 @@ $document.ready(function () {
 	
 	$('form.rd-mailform2').validate({  //   Проверка формы 
 		   rules: {	innerx: {  required:true, number:true },innery: {  required:true, number:true},innerz: {  required:true, number:true} },
-	       messages: {		innerx: {   required:"Укажите длину в мм!", number:"Только цифры!" },innery: {  required:"Укажите ширину в мм!", number:"Только цифры!" },innerz: {  required:"Укажите высоту в мм!", number:"Только цифры!" } },
+	       messages: {		innerx: {   required:"Укажите длину в см!", number:"Только цифры!" },innery: {  required:"Укажите ширину в см!", number:"Только цифры!" },innerz: {  required:"Укажите высоту в см!", number:"Только цифры!" } },
 	    	submitHandler: function(){$('form.rd-mailform2').attr('name','submitted');}
 			
 			     	}); // Конец Validate	

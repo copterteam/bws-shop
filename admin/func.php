@@ -13,19 +13,19 @@ $sort = array('innerx','innery','innerz');
    $result=$link->query($query);
    $array=$result->fetch();
 
-   $fresult[0]=$array['innerx'];
+   $fresult[0]=$array['innerx']/10;
 	
   $query="SELECT id, innery FROM casemodels ORDER BY innery DESC";
    $result=$link->query($query);
    $array=$result->fetch();
 
-   $fresult[1]=$array['innery'];
+   $fresult[1]=$array['innery']/10;
 	  
   $query="SELECT id, innerz FROM casemodels ORDER BY innerz DESC";
    $result=$link->query($query);
    $array=$result->fetch();
 
-   $fresult[2]=$array['innerz'];
+   $fresult[2]=$array['innerz']/10;
 
 
 	  

@@ -7,9 +7,9 @@ $act=$_GET['act'];
  if($act == 'searchcase'){
 	 
 	 
-	 $innerx=$_GET['innerx'];	 
-	 $innery=$_GET['innery'];
-	 $innerz=$_GET['innerz'];
+	 $innerx=$_GET['innerx']*10;	 
+	 $innery=$_GET['innery']*10;
+	 $innerz=$_GET['innerz']*10;
 	 
 	 $innerxx=$innerx*1.5;
 	 $inneryy=$innery*1.5;

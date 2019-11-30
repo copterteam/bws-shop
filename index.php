@@ -56,9 +56,9 @@ $maxsizes = maxSizes($link);
                 <form   style="margin-top:49px" method="post"  action="bat/searchbase.php" class="rd-mailform2">
                   <div class="range">
                     <div class="cell-xs-12 cell-md-5">
-                      <div class="forinput"><input type="text"  name="innerx"  placeholder="Длина (Max: <?echo($maxsizes[0]);?> мм)"></div>
-                      <div class="forinput"><input style="margin-top:29px" type="text"  name="innery" placeholder="Ширина (Max: <?echo($maxsizes[1]);?> мм)"></div>
-                      <div class="forinput"><input style="margin-top:29px" type="text"  name="innerz" placeholder="Высота (Max: <?echo($maxsizes[2]);?> мм)"></div>
+                      <div class="forinput"><input type="text"  name="innerx"  placeholder="Длина (Max: <?echo($maxsizes[0]);?> см)"></div>
+                      <div class="forinput"><input style="margin-top:29px" type="text"  name="innery" placeholder="Ширина (Max: <?echo($maxsizes[1]);?> см)"></div>
+                      <div class="forinput"><input style="margin-top:29px" type="text"  name="innerz" placeholder="Высота (Max: <?echo($maxsizes[2]);?> см)"></div>
                    
 				  
 					<button type="submit" class="btn btn-lg btn-rect btn-primary">Подобрать</button>
