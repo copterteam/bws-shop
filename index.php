@@ -22,6 +22,56 @@ $maxsizes = maxSizes($link);
     <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
     <script src="js/html5shiv.min.js"></script>
 		<![endif]-->
+		
+		<style>
+		.caseselect{
+			clear:both;
+		}
+		
+		 .caseitem{
+			 position:relative;
+			 border:1px solid #cccccc;
+			 padding:0;
+			 text-align:center;
+			 margin: 20px 20px;
+		 }
+		 
+		 .caseitem span.caseart{
+			 display:block;
+			 position:absolute;
+			 width:100%;
+			 background-color:rgba(130,130,130,.7);
+			 color:#fff;
+		 }
+		 .caseitem img{
+			 display:inline-block;
+			 width:300px;			 
+		 }
+		  .caseitem span.hrline{
+			  display:block;
+			  border-bottom:1px solid #cccccc;
+			  text-align:left;
+			  padding-left:8px;
+			  font-size:0.9em;
+		  }
+		  .caseitem span.size{
+			  display:inline-block;
+			  margin-top:0px;
+			  padding:8px;
+			  color:rgb(60,60,60);
+			  background-color:rgba(255,255,255,.7);
+		  }
+		  .caseitem strong.price{
+			  display:inline-block;
+			  position:absolute;
+			  right:0;
+			  bottom:80px;
+			  background-color:#063ec4;
+			  color:#fff;
+			  padding: 3px 12px;
+			
+		  }
+		</style>
   </head>
   <body>
   
@@ -71,6 +121,7 @@ $maxsizes = maxSizes($link);
                 </form>
               </div>
             </div>
+			 <div class="range caseselect"></div>
           </div>
         </section>
         <!-- Google map-->

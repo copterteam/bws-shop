@@ -88,11 +88,17 @@ $document.ready(function () {
 			
 			 $.getJSON('/bat/searchbase.php?callback=?',{act:'searchcase',innerx: $(this).find('input[name="innerx"]').val(),innery: $(this).find('input[name="innery"]').val(),innerz: $(this).find('input[name="innerz"]').val()},function(cases){
 		 		 
-		      
-
+		       $('.caseselect').text('');
+			   
 			  $.each(cases.item1,function(i,casedata){  
 										 
-		       	        $('.main_content .fresh_feedback').append( ''+casedata.innerx+'');
+		       	        $('.caseselect').append( '<div class="caseitem"><span class="caseart">'+casedata.art+'</span><img  src="images/cases/'+casedata.art+'.jpg"/><br><span class="hrline">Внутренние размеры:</span><span class="size">Д: '+casedata.innerx/10+' см</span><span class="size">Ш: '+casedata.innery/10+' см</span><span class="size">В: '+casedata.innerz/10+' см</span><strong class="price">'+casedata.price.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ')+' р</strong></div>');
+		 					
+		       });
+			   
+			  $.each(cases.item2,function(i,casedata){  
+										 
+		       	        $('.caseselect').append( '<div class="caseitem"><span class="caseart">'+casedata.art+'</span><img  src="images/cases/'+casedata.art+'.jpg"/><br><span class="hrline">Внутренние размеры:</span><span class="size">Д: '+casedata.innerx/10+' см</span><span class="size">Ш: '+casedata.innery/10+' см</span><span class="size">В: '+casedata.innerz/10+' см</span><strong class="price">'+casedata.price.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ')+' р</strong></div>');
 		 					
 		       });
 			
