@@ -90,12 +90,16 @@ $document.ready(function () {
 		 		 
 		       $('.caseselect').text('');
 			   
+			  if(cases.first_num > 0 ){	$('.caseselect').append( '<div class="partition">Хорошо подходят по размерам: '+cases.first_num+'шт.</div>');   } 
 			  $.each(cases.item1,function(i,casedata){  
 										 
 		       	        $('.caseselect').append( '<div class="caseitem"><span class="caseart">'+casedata.art+'</span><img  src="images/cases/'+casedata.art+'.jpg"/><br><span class="hrline">Внутренние размеры:</span><span class="size">Д: '+casedata.innerx/10+' см</span><span class="size">Ш: '+casedata.innery/10+' см</span><span class="size">В: '+casedata.innerz/10+' см</span><strong class="price">'+casedata.price.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ')+' р</strong></div>');
 		 					
 		       });
 			   
+			  if(cases.second_num > 0 ){	$('.caseselect').append( '<div class="partition">Варианты с большим запасом: '+cases.second_num+'шт.</div>');   } 
+
+			  
 			  $.each(cases.item2,function(i,casedata){  
 										 
 		       	        $('.caseselect').append( '<div class="caseitem"><span class="caseart">'+casedata.art+'</span><img  src="images/cases/'+casedata.art+'.jpg"/><br><span class="hrline">Внутренние размеры:</span><span class="size">Д: '+casedata.innerx/10+' см</span><span class="size">Ш: '+casedata.innery/10+' см</span><span class="size">В: '+casedata.innerz/10+' см</span><strong class="price">'+casedata.price.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ')+' р</strong></div>');

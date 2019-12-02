@@ -36503,3 +36503,65 @@ label span {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+/*# Case select part */
+
+	.caseselect{
+			clear:both;
+		}
+		.caseselect .partition{
+			 width:100%;
+		     display:block;
+			 background-color:#063ec4;
+			 color:#fff;
+			 padding:2px 25px;
+			 text-align:left;
+			 margin-top:25px;
+		}
+		 .caseitem{
+			 position:relative;
+			 border:1px solid #cccccc;
+			 padding:0;
+			 text-align:center;
+			 margin: 20px 20px;
+		 }
+		 
+		 .caseitem span.caseart{
+			 display:block;
+			 position:absolute;
+			 width:100%;
+			 background-color:rgba(130,130,130,.7);
+			 color:#fff;
+		 }
+		 .caseitem img{
+			 display:inline-block;
+			 width:300px;			 
+		 }
+		  .caseitem span.hrline{
+			  display:block;
+			  border-bottom:1px solid #cccccc;
+			  text-align:left;
+			  padding-left:8px;
+			  font-size:0.9em;
+		  }
+		  .caseitem span.size{
+			  display:inline-block;
+			  margin-top:0px;
+			  padding:8px;
+			  color:rgb(60,60,60);
+			  background-color:rgba(255,255,255,.7);
+		  }
+		  .caseitem strong.price{
+			  display:inline-block;
+			  position:absolute;
+			  right:0;
+			  bottom:80px;
+			  background-color:#063ec4;
+			  color:#fff;
+			  padding: 3px 12px;
+			
+		  }
+		  
+	/*# Case select part */	  
+		  
