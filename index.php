@@ -35,9 +35,9 @@ $maxsizes = maxSizes($link);
       <main class="page-content">
         <!-- Links -->
              
-       <section>
+       <section>	 
          <img src="images/4316.jpg">
-        </section>
+	    </section>
        <section class="section-35 section-sm-top-75 section-sm-bottom-145 text-center">
           <div class="shell">
             <div class="range range-sm-center">
