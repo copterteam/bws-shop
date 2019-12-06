@@ -55,6 +55,7 @@
 
     <!-- Java script-->
     <script src="js/core.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
