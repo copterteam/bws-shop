@@ -12,5 +12,3 @@ RewriteCond %{HTTP_HOST} ^bws-shop.ru$
 RewriteRule ^(.*)$ "http\:\/\/www\.bws-shop\.ru\/$1" [R=301,L]
 
 Redirect 301 /shipping http://www.bws-shop.ru/404
-Redirect 301 /products https://www.avito.ru/i106048785
-

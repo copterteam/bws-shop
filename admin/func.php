@@ -2,6 +2,42 @@
 
 date_default_timezone_set('UTC');
 
+ 
+function instagram_api( $link ){
+    $instagram = curl_init(); // инициализируем соединение
+    curl_setopt($instagram, CURLOPT_URL, $link); // к этому URL будем подключаться
+    curl_setopt($instagram, CURLOPT_RETURNTRANSFER, 1); // возвращать, а не распечатываь результат
+    curl_setopt($instagram, CURLOPT_TIMEOUT, 20); // таймаут
+    $json_result = curl_exec($instagram); // подключаемся, получаем данные
+    curl_close($instagram); // закрываем соединение
+    return json_decode( $json_result ); // декодируем из json и возвращаем результат
+}
+
+function allProducts($link){
+
+$fresult = [];
+	
+  
+   
+  $query="SELECT id,art,price,innerx,innery,innerz,outerx,outery,outerz,weight,lid,material FROM casemodels WHERE art LIKE 'M%' ORDER BY innerx";
+   $result=$link->query($query);
+   $array=$result->fetchAll(PDO::FETCH_ASSOC);
+
+   $fresult[0]=$array;
+	
+  $query="SELECT id,art,price,innerx,innery,innerz,outerx,outery,outerz,weight,lid,material FROM casemodels WHERE art LIKE 'S%' ORDER BY innerx";
+   $result=$link->query($query);
+   $array=$result->fetchAll(PDO::FETCH_ASSOC);
+
+   $fresult[1]=$array;
+	  
+	  
+	  
+  return $fresult;
+   
+}
+
+
 function maxSizes($link){
 
 $fresult = [];
