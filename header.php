@@ -11,7 +11,7 @@
                 <!-- RD Navbar Toggle-->
                 <button data-rd-navbar-toggle=".rd-navbar-nav-wrap" class="rd-navbar-toggle"><span></span></button>
                 <!-- RD Navbar Brand-->
-                <div class="rd-navbar-brand"><img src="images/header_logo.png" ><a href="index.html" class="brand-name">БВС СИСТЕМЫ</a></div>
+                <div class="rd-navbar-brand"><img src="/images/header_logo.png" ><a href="index.html" class="brand-name">БВС СИСТЕМЫ</a></div>
                 <aside class="rd-navbar-aside">
                   <div data-rd-navbar-toggle=".rd-navbar-aside" class="rd-navbar-aside-toggle"><span></span></div>
                   <div class="rd-navbar-aside-content">

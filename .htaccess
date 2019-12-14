@@ -11,4 +11,10 @@ RewriteRule ^(.*)$ $1.php
 RewriteCond %{HTTP_HOST} ^bws-shop.ru$
 RewriteRule ^(.*)$ "http\:\/\/www\.bws-shop\.ru\/$1" [R=301,L]
 
+RewriteCond %{REQUEST_URI}  ^\/case\/.*$
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^case\/(.*)$ \/casepage.php
+
+
 Redirect 301 /shipping http://www.bws-shop.ru/404

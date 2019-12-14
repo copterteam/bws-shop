@@ -36563,5 +36563,26 @@ label span {
 			
 		  }
 		  
+		 table.casespec{
+			 
+			 margin: 40px 0;
+			 padding:5px;		 
+			 min-width:60%;
+		 } 
+		 table.casespec tr td{
+
+            padding:5px;	
+		 }	
+		table.casespec tr td.left{
+			text-align:left;
+            padding:5px;	
+		 }		
+		table.casespec tr td.half{
+			width:50%;	
+		 }	
+		table.casespec tr td.blue{
+			background-color:#063ec4;
+			 color:#fff;
+		 }			 
 	/*# Case select part */	  
 		  

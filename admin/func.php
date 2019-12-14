@@ -13,6 +13,22 @@ function instagram_api( $link ){
     return json_decode( $json_result ); // декодируем из json и возвращаем результат
 }
 
+
+function caseProduct($art,$link){
+
+	
+  
+   
+  $query="SELECT id,art,price,innerx,innery,innerz,outerx,outery,outerz,weight,lid,material FROM casemodels WHERE art = '$art' ";
+   $result=$link->query($query);
+   $array=$result->fetch(PDO::FETCH_ASSOC);
+
+	  
+	  
+  return $array;
+   
+}
+
 function allProducts($link){
 
 $fresult = [];

@@ -51,17 +51,16 @@ $allproducts = allProducts($link);
 
 				<?
 			foreach ($allproducts[0] as $prod) {
-			echo('<div class="caseitem"><span class="caseart">'.$prod[art].'</span><a href="#"><img  src="images/cases/'.$prod[art].'.jpg" title="Ударопрочный пластиковый кейс '.$prod[art].'" /></a><br><span class="hrline">Внутренние размеры:</span><span class="size">Д: '.($prod[innerx]/10).' см</span><span class="size">Ш: '.($prod[innery]/10).' см</span><span class="size">В: '.($prod[innerz]/10).' см</span><strong class="price">'.number_format($prod[price],0,'.',' ').' р</strong></div>');
+			echo('<div class="caseitem"><span class="caseart">'.$prod[art].'</span><a href="case/'.$prod[art].'"><img  src="images/cases/'.$prod[art].'.jpg" title="Ударопрочный пластиковый кейс '.$prod[art].'" /></a><br><span class="hrline">Внутренние размеры:</span><span class="size">Д: '.($prod[innerx]/10).' см</span><span class="size">Ш: '.($prod[innery]/10).' см</span><span class="size">В: '.($prod[innerz]/10).' см</span><strong class="price">'.number_format($prod[price],0,'.',' ').' р</strong></div>');
 			
-	
 			}?>	 
         			  
 			  <div class="partition">Кейсы серии S</div>
 
 			<?
 			foreach ($allproducts[1] as $prod) {
-			echo('<div class="caseitem"><span class="caseart">'.$prod[art].'</span><a href="#"><img  src="images/cases/'.$prod[art].'.jpg" title="Ударопрочный пластиковый кейс '.$prod[art].'" /></a><br><span class="hrline">Внутренние размеры:</span><span class="size">Д: '.($prod[innerx]/10).' см</span><span class="size">Ш: '.($prod[innery]/10).' см</span><span class="size">В: '.($prod[innerz]/10).' см</span><strong class="price">'.number_format($prod[price],0,'.',' ').' р</strong></div>');
-				
+			echo('<div class="caseitem"><span class="caseart">'.$prod[art].'</span><a href="case/'.$prod[art].'"><img  src="images/cases/'.$prod[art].'.jpg" title="Ударопрочный пластиковый кейс '.$prod[art].'" /></a><br><span class="hrline">Внутренние размеры:</span><span class="size">Д: '.($prod[innerx]/10).' см</span><span class="size">Ш: '.($prod[innery]/10).' см</span><span class="size">В: '.($prod[innerz]/10).' см</span><strong class="price">'.number_format($prod[price],0,'.',' ').' р</strong></div>');
+
 			}?>	 
 						 
             </div>

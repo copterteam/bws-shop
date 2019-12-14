@@ -22,8 +22,8 @@ try {
             case 'contact':
                 $subject = 'Сообщение с сайта BWS-shop';
                 break;
-            case 'subscribe':
-                $subject = 'Subscribe request';
+            case 'case':
+                $subject = 'Вопрос по модели '.$_POST['casemodel'];
                 break;
             default:
                 $subject = 'Сообщение с сайта BWS-shop';
