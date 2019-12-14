@@ -106,12 +106,13 @@ $product = caseProduct($caseart,$link);
                 <!-- RD Mailform result field-->
                 <div class="rd-mailform-validate"></div>
                 <!-- RD Mailform-->
-                <form data-result-class="rd-mailform-validate" data-form-type="case" data-casemodel="<?print($product[art]);?>" method="post" action="/bat/rd-mailform.php" class="rd-mailform">
+                <form data-result-class="rd-mailform-validate" data-form-type="case"  method="post" action="/bat/rd-mailform.php" class="rd-mailform">
                   <div class="range offset-top-40">
                     <div class="cell-xs-12 cell-md-5">
                       <input type="text" name="name" data-constraints="@NotEmpty" placeholder="Ваше имя">
                       <input type="text" data-constraints="@Phone" name="phone" placeholder="Номер телефона">
                       <input type="text" name="email" data-constraints="@NotEmpty @Email" placeholder="Email">
+					  <input hidden name="casemodel" value="<?print($product[art]);?>">
                     </div>
                     <div class="cell-xs-12 cell-md-7 offset-top-29 offset-md-top-0">
                       <textarea name="message" data-constraints="@NotEmpty" placeholder="Ваш вопрос"></textarea>
