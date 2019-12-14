@@ -35884,10 +35884,12 @@ div[class^="rd-mailform-validate"]:before {
 
 div[class^="rd-mailform-validate"].success {
   opacity: 1;
+  background: rgb(102,225,81);
 }
 
 div[class^="rd-mailform-validate"].error {
   opacity: 1;
+   background: #c43c06;
 }
 
 .mfInput {
