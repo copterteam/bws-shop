@@ -9,7 +9,7 @@ RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^(.*)$ $1.php
 
 RewriteCond %{HTTP_HOST} ^bws-shop.ru$
-RewriteRule ^(.*)$ "http\:\/\/www\.bws-shop\.ru\/$1" [R=301,L]
+RewriteRule ^(.*)$ "https\:\/\/www\.bws-shop\.ru\/$1" [R=301,L]
 
 RewriteCond %{REQUEST_URI}  ^\/case\/.*$
 RewriteCond %{REQUEST_FILENAME} !-d

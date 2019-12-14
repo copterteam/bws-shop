@@ -35865,13 +35865,11 @@ div[class^="rd-mailform-validate"] {
   opacity: 0;
   transition: .3s;
   color: #fff;
-  background: rgb(102,225,81);
   z-index: 999;
   pointer-events: none;
 }
 
 div[class^="rd-mailform-validate"]:before {
-  content: '\f00c';
   font-family: 'FontAwesome';
   display: inline-block;
   font-size: 14px;
@@ -35886,10 +35884,16 @@ div[class^="rd-mailform-validate"].success {
   opacity: 1;
   background: rgb(102,225,81);
 }
-
 div[class^="rd-mailform-validate"].error {
   opacity: 1;
    background: #c43c06;
+}
+div[class^="rd-mailform-validate success"]:before {
+    content: '\f00c';
+}
+
+div[class^="rd-mailform-validate error"]:before {
+    content: '\f00d';
 }
 
 .mfInput {

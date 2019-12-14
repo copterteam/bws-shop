@@ -75,6 +75,34 @@ $maxsizes = maxSizes($link);
 			 <div class="range caseselect"></div>
           </div>
         </section>
+		
+ <!-- 		
+		<?php 
+		
+$access = '25734240504.1677ed0.d40c14b426c84cea87ac441ad8cd7aac';
+$user_id = 'self'; 
+$instaresult = instagram_api("https://api.instagram.com/v1/users/" . $user_id . "/media/recent?access_token=" . $access. "&count=20");
+
+echo('<a href="https://www.instagram.com/'.$instaresult->data[0]->user->username.'" target="_blanck"><img src="'.$instaresult->data[0]->user->profile_picture.'"></a>'); 
+echo('<span>'.$instaresult->data[0]->user->full_name.'</span>'); 
+
+foreach ($instaresult->data as $post) {
+    $post_date = date('d.m.Y', $post->created_time);   
+	
+
+
+    echo 
+    '<article class="thumb">
+    <a id="insta-' . $post->id . '" href="' . $post->link . '" class="image ' . $post->filter . '" target="_blanck">
+	<img src="' . $post->images->low_resolution->url . '" title="'.$post->caption->text.'"/></a>
+    </article>';
+}
+?>
+
+
+-->
+
+		
         <!-- Google map-->
         <section>
           <!-- RD Google Map-->
