@@ -35865,13 +35865,13 @@ div[class^="rd-mailform-validate"] {
   opacity: 0;
   transition: .3s;
   color: #fff;
-  background: #c43c06;
+  background: rgb(102,225,81);
   z-index: 999;
   pointer-events: none;
 }
 
 div[class^="rd-mailform-validate"]:before {
-  content: '\f00d';
+  content: '\f00c';
   font-family: 'FontAwesome';
   display: inline-block;
   font-size: 14px;

@@ -112,7 +112,7 @@ $product = caseProduct($caseart,$link);
                       <input type="text" name="name" data-constraints="@NotEmpty" placeholder="Ваше имя">
                       <input type="text" data-constraints="@Phone" name="phone" placeholder="Номер телефона">
                       <input type="text" name="email" data-constraints="@NotEmpty @Email" placeholder="Email">
-					  <input hidden name="casemodel" value="<?print($product[art]);?>">
+					  <input type="hidden" name="casemodel" value="<?print($product[art]);?>">
                     </div>
                     <div class="cell-xs-12 cell-md-7 offset-top-29 offset-md-top-0">
                       <textarea name="message" data-constraints="@NotEmpty" placeholder="Ваш вопрос"></textarea>
